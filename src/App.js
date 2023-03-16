@@ -1,14 +1,14 @@
-import './App.css';
+import "./App.css";
 
 // container
-import ContainerGraphic from './container/ContainerGraphic';
+import ContainerGraphic from "./container/ContainerGraphic";
 
 function App() {
-  return (
-    <div className="App">
-      <ContainerGraphic />
-    </div>
-  );
+    return (
+        <div className="App">
+            <ContainerGraphic />
+        </div>
+    );
 }
 
 export default App;

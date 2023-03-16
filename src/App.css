@@ -1,194 +1,183 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap");
 
 body {
-  font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 
-  background-color: #252422;
+    background-color: #252422;
 }
 
 .App {
-  text-align: center;
+    text-align: center;
 
-
-
-  /* background-color: aqua; */
+    /* background-color: aqua; */
 }
 .containerClass {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .containerGraphicClass {
-  width: 90%;
-  max-width: 600px;
+    width: 90%;
+    max-width: 600px;
 
-  background-color: #252422;
+    background-color: #252422;
 
-  border-radius: 10px;
+    border-radius: 10px;
 
-  padding: 10px;
-  margin: 10px;
+    padding: 10px;
+    margin: 10px;
 
-  border: solid .5px #403D39;
-
+    border: solid 0.5px #403d39;
 }
 
 /* title and list */
 .titleAndListClass {
-  width: 90%;
-  margin: 0 auto;
-  padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
 
-  /* height: 30px; */
+    /* height: 30px; */
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .titleAndListClass h1 {
-  color: #CCC5B9;
-  margin-bottom: 0;
+    color: #ccc5b9;
+    margin-bottom: 0;
 
-  font-size: 18.4px;
-  text-align: left;
+    font-size: 18.4px;
+    text-align: left;
 }
 .titleAndListClass li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  
-  text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
+    text-align: center;
 }
 .titleAndListClass ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  
-  text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
 }
 .titleAndListClass button {
-  border: none;
-  background-color: transparent;
-  color: #CCC5B9;
+    border: none;
+    background-color: transparent;
+    color: #ccc5b9;
 }
 .buttonShowList {
-/* background-color: #CCC5B9; */
-  display: flex;
-  
+    /* background-color: #CCC5B9; */
+    display: flex;
 
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 
-  height: 30px;
+    height: 30px;
 }
 .buttonShowList:last-child {
-  align-items: start;
+    align-items: start;
 }
 .buttonShowList polyline {
-  stroke: #CCC5B9;
+    stroke: #ccc5b9;
 }
-
 
 /* graphic edit */
 svg {
-  /* width: 90%; */
-  
+    /* width: 90%; */
 
-  /* background-color: rgb(58, 68, 68); */
+    /* background-color: rgb(58, 68, 68); */
 }
-.graphiClass:hover .verticalLineClass{
-  opacity: 1;
-  
+.graphiClass:hover .verticalLineClass {
+    opacity: 1;
 }
 .horizontalLineClass {
-  stroke-dasharray: 5,5;
-  stroke: #CCC5B9;
+    stroke-dasharray: 5, 5;
+    stroke: #ccc5b9;
 }
 .verticalLineClass {
-  opacity: 0;
-  stroke-dasharray: 3,3;
-  stroke: #403D39;
+    opacity: 0;
+    stroke-dasharray: 3, 3;
+    stroke: #403d39;
 }
 .horizontalLineBottomClass {
-  stroke: #CCC5B9;
-  stroke-width: 2px;
-
+    stroke: #ccc5b9;
+    stroke-width: 2px;
 }
 line {
-  fill: none;
-  stroke-width: 1px;
-  
+    fill: none;
+    stroke-width: 1px;
 }
 polyline {
-  fill: none;
-  stroke-width: 3px;
-  stroke: #EB5E28;
-  stroke-linecap: round;
+    fill: none;
+    stroke-width: 3px;
+    stroke: #eb5e28;
+    stroke-linecap: round;
 }
 path {
-  fill: none;
-  stroke-width: 3px;
-  stroke: #EB5E28;
-  stroke-linecap: round;
+    fill: none;
+    stroke-width: 3px;
+    stroke: #eb5e28;
+    stroke-linecap: round;
 
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  transition: 1s;
+    transition: 1s;
 }
 .weekClass {
-  height: 22px;
-  /* width: 90%; */
+    height: 22px;
+    /* width: 90%; */
 
-  margin-top: 5px;
+    margin-top: 5px;
 
-  /* background-color: aqua; */
+    /* background-color: aqua; */
 }
 .weekClass text {
-  fill: #CCC5B9;
+    fill: #ccc5b9;
 
-  font-size: small;
+    font-size: small;
 }
 
 /* Data Card */
 .mapDataCard {
-  width: 100%;
+    width: 100%;
 }
 .mapDataCard:hover .dataCardClass {
-  opacity: 1;
+    opacity: 1;
 }
 
 .dataCardClass {
-  position: absolute;
+    position: absolute;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
-  width: 100px;
-  height: 39px;
+    width: 100px;
+    height: 39px;
 
-  background-color: #FFFCF2;
+    background-color: #fffcf2;
 
-  border-radius: 10px;
+    border-radius: 10px;
 
-  top: 100px;
+    top: 100px;
 
-  opacity: 0;
-
+    opacity: 0;
 }
 .dataCardClass h1 {
-  color: #252422;
+    color: #252422;
 
-  margin: 0;
+    margin: 0;
 }
 .dataCardClass .circle {
-  width: 10px;
-  height: 10px;
+    width: 10px;
+    height: 10px;
 
-  border-radius: 10px;
-  background-color: #EB5E28;
+    border-radius: 10px;
+    background-color: #eb5e28;
 }

@@ -1,23 +1,34 @@
 import React from "react";
 
 // function
-import {createHeightsOfHorintalLines} from '../util/createLines'
+import { createHeightsOfHorintalLines } from "../util/createLines";
 
 // array
 import { lineArray } from "../array/array";
 
-export default function LineComponents({svgWidth, svgHeight}) {
+export default function LineComponents({ svgWidth, svgHeight }) {
     return (
         <>
-        {lineArray.map((el) => {
-            return (
-                <line x1='0' y1={createHeightsOfHorintalLines(el, svgHeight)} x2={svgWidth} y2={createHeightsOfHorintalLines(el, svgHeight)} className='horizontalLineClass' key={el.toString()}/>
-            )
-        })}
+            {lineArray.map((el) => {
+                return (
+                    <line
+                        x1="0"
+                        y1={createHeightsOfHorintalLines(el, svgHeight)}
+                        x2={svgWidth}
+                        y2={createHeightsOfHorintalLines(el, svgHeight)}
+                        className="horizontalLineClass"
+                        key={el * Date.now()}
+                    />
+                );
+            })}
 
-        <line x1='0' y1={svgHeight} x2={svgWidth} y2={svgHeight} className='horizontalLineBottomClass' />
-
-        
+            <line
+                x1="0"
+                y1={svgHeight}
+                x2={svgWidth}
+                y2={svgHeight}
+                className="horizontalLineBottomClass"
+            />
         </>
-    )
+    );
 }
